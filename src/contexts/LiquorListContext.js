@@ -5,7 +5,7 @@ const LiquorListContext = React.createContext({
   error: null,
   setError: () => {},
   clearError: () => {},
-  setLiquorList: () => {},
+  setThingList: () => {},
 })
 export default LiquorListContext
 

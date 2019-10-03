@@ -1,0 +1,33 @@
+input {
+  outline: 1px solid  #3CBCC3;
+}
+
+
+input:focus {
+  outline: 3px solid  #3CBCC3;
+}
+
+
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.image-container img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 15px;
+  }
+}

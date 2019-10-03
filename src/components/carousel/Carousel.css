@@ -1,0 +1,42 @@
+#container, .carousel {
+	margin: 0;
+    width: 800px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.image-slide {
+	height: 300px;
+	width: 800px;
+	transition: background-image .3s ease-in-out;
+}
+
+.slide-arrow {
+	color: #fff;
+	cursor: pointer;
+    font-size: 4rem;
+}
+
+.slide-arrow.right {
+    right: -4rem;
+    position: absolute;
+    top: 50%;
+}
+
+.slide-arrow.left {
+    left: -4rem;
+    position: absolute;
+    top: 50%;
+}
+
+.image-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    color: white;
+    text-decoration: none;
+    text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+}

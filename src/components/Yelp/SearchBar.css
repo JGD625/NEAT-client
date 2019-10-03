@@ -1,0 +1,102 @@
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+}
+
+.SearchBar-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.SearchBar-fields input {
+  height: 1.5rem;
+  width: 21rem;
+  padding: .66rem 1rem;
+  margin-left: 2.22rem;
+  margin-right: 2.22rem;
+  border: 3px solid #E40C2B;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: .3rem .5rem;
+  background-color: #E40C2B;
+  color: #ffffff;
+  font-size: 1rem;
+  width: 100px; 
+}
+
+button a {
+  border-radius: 4px;
+  background-color: #E40C2B;
+  color: #ffffff;
+  font-size: 1rem;
+ 
+}
+
+
+.SearchBar-submit {
+  text-align: center;
+}
+
+.SearchBar-submit a {
+  border-radius: 4px;
+  padding: .72rem 1.7rem;
+  background-color: #E40C2B;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color .5s;
+}
+
+.SearchBar-submit a:hover {
+  cursor: pointer;
+  background-color: #E40C2B;
+}
+
+.SearchBar-logos {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar-logos h3 {
+  font-size: 1.1rem;
+}
+
+.yelp_icon {
+  max-width: 90px;
+}
+
+@media only screen and (max-width: 560px) {
+  .SearchBar {
+  }
+
+  .SearchBar-sort-options ul {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .SearchBar-fields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SearchBar-fields input {
+    margin-right: 0;
+    margin-bottom: .86rem;
+    max-width: 250px;
+  }
+}
+

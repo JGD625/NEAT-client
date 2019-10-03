@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 
 export const nullLiquor = {
-  brand: {},
-  tags: [],
+  liquor: {},
+  reviews: [],
 }
 
 const LiquorContext = React.createContext({
   liquor: nullLiquor,
-  comments: [],
+  reviews: [],
   error: null,
   setError: () => {},
   clearError: () => { },
   setLiquor: () => {},
   clearLiquor: () => {},
-  setComments: () => {},
-  addComment: () => {},
+  setReviews: () => {},
+  addReview: () => {},
 })
 
 export default LiquorContext
@@ -38,33 +38,33 @@ export class LiquorProvider extends Component {
     this.setState({ liquor })
   }
 
-  setComments = comments => {
-    this.setState({ comments })
+  setReviews = reviews => {
+    this.setState({ reviews })
   }
 
   clearLiquor = () => {
     this.setLiquor(nullLiquor)
-    this.setComments([])
+    this.setReviews([])
   }
 
-  addComment = comment => {
-    this.setComments([
-      ...this.state.comments,
-      comment
+  addReview = review => {
+    this.setReviews([
+      ...this.state.reviews,
+      review
     ])
   }
 
   render() {
     const value = {
       liquor: this.state.liquor,
-      comments: this.state.comments,
+      reviews: this.state.reviews,
       error: this.state.error,
       setError: this.setError,
       clearError: this.clearError,
       setLiquor: this.setLiquor,
-      setComments: this.setComments,
+      setReviews: this.setReviews,
       clearLiquor: this.clearLiquor,
-      addComment: this.addComment,
+      addReview: this.addReview,
     }
     return (
       <LiquorContext.Provider value={value}>

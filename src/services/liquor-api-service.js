@@ -1,4 +1,5 @@
 import config from '../config'
+import TokenService from '../services/token-service'
 
 const LiquorApiService = {
   getLiquors() {
@@ -15,6 +16,7 @@ const LiquorApiService = {
   getLiquor(liquorId) {
     return fetch(`${config.API_ENDPOINT}/liquors/${liquorId}`, {
       headers: {
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
     })
       .then(res =>
@@ -23,9 +25,10 @@ const LiquorApiService = {
           : res.json()
       )
   },
-  getLiquorComments(liquorId) {
-    return fetch(`${config.API_ENDPOINT}/liquors/${liquorId}/comments`, {
+  getLiquorReviews(liquorId) {
+    return fetch(`${config.API_ENDPOINT}/liquors/${liquorId}/reviews`, {
       headers: {
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
     })
       .then(res =>
@@ -34,14 +37,16 @@ const LiquorApiService = {
           : res.json()
       )
   },
-  postComment(liquorId, text) {
-    return fetch(`${config.API_ENDPOINT}/comments`, {
+  postReview(liquorId, text, rating) {
+    return fetch(`${config.API_ENDPOINT}/reviews`, {
       method: 'POST',
       headers: {
+        'authorization': `bearer ${TokenService.getAuthToken()}`,
         'content-type': 'application/json',
       },
       body: JSON.stringify({
         liquor_id: liquorId,
+        rating,
         text,
       }),
     })
