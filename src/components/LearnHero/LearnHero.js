@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom'
-import CarouselOne from '../../images/CarouselOne.png'
+import NeatGlass from '../../images/neat_glass.png'
 import './LearnHero.css'
 
 export default class LearnHero extends Component {
@@ -8,9 +8,10 @@ export default class LearnHero extends Component {
   return (
     <section className="Learn_Hero">
     <Link to='/learn'>
-    <img src={CarouselOne} alt="barrels of whiskey" className="Learn_Hero_IMG"/>
+    <img src={NeatGlass} alt="barrels of whiskey" className="Learn_Hero_IMG"/>
     <ImageTitle title={ "Learn about Whiskies" } />
     </Link>
+    <p className="learn_p">Learn about whiskey classifications and legal guidelines. </p>
     </section>
   );
 }
@@ -18,7 +19,7 @@ export default class LearnHero extends Component {
 
 const ImageTitle = ({ title }) => (
 
-  <div className="image-title">
+  <div className="learn_image-title">
     { title } 
   </div>
 );

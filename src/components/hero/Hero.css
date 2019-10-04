@@ -1,18 +1,22 @@
 .Hero {
     position: relative;
+    background: #000;
     }
     
 .Hero_IMG {
-        width: 800px;
-        height: 300px;
+    position: relative;
+        left: 500px;
+        width: 250px;
+        height: 250px;
     }
     
 .image-title {
+    position: absolute;
+    top: 50px;
+    left: 25px;
         font-size: 3rem;
-        position: absolute;
-        top: 50px;
-        left: 25px;
         color: white;
         text-decoration: none;
         text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+        font-family: 'Fredericka the Great', cursive;
     }

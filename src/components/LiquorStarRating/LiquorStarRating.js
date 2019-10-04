@@ -14,7 +14,7 @@ export function LiquorStarRating({rating}) {
     stars[i].filled = true
   }
 
-  return <span className='ThingStarRating'>
+  return <span className='LiquorStarRating'>
     { stars.map((star, index) => <Star key={index} filled={star.filled} />) }
   </span>
 }

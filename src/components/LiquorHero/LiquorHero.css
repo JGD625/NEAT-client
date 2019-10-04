@@ -1,27 +1,27 @@
-.Learn_Hero {
+.Liquor_Hero {
     position: relative;
-    background:#000;
+    background: #000;
     }
     
-.Learn_Hero_IMG {
+.Hero_IMG {
     position: relative;
-    left: 500px;
-        width: 200px;
-        height: 200px;
+        left: 500px;
+        width: 250px;
+        height: 250px;
     }
     
-.learn_image-title {
-    font-family: 'Fredericka the Great', cursive;
+.image-title {
+    position: absolute;
+    top: 50px;
+    left: 25px;
         font-size: 3rem;
-        position: absolute;
-        top: 50px;
-        left: 25px;
+        font-family: 'Fredericka the Great', cursive;
         color: white;
         text-decoration: none;
         text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
     }
 
-    .learn_p {
+    .liquor_p {
         font-family: 'Oswald', sans-serif;
         color: white;
     }

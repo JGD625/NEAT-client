@@ -9,10 +9,10 @@ export default class LiquorListItem extends Component {
     const { liquor } = this.props
 
     return (
-      <Link to={`/liquors/${liquor.id}`} className='ThingListItem'>
-        <div className='ThingListItem__details'>
-          <div className='ThingListItem__text'>
-            <h2 className='ThingListItem__heading'>{liquor.liquor_name}</h2>
+      <Link to={`/liquors/${liquor.id}`} className='LiquorListItem'>
+        <div className='LiquorListItem__details'>
+          <div className='LiquorListItem__text'>
+            <h2 className='LiquorListItem__heading'>{liquor.liquor_name}</h2>
             <div style={{fontSize: 20}}>
             <StarRatingComponent 
               name="rate2" 
@@ -23,12 +23,12 @@ export default class LiquorListItem extends Component {
               value={liquor.price}
               />
               </div>
-            <p className='ThingListItem__description'>{truncate(liquor.content)}</p>
+            <p className='LiquorListItem__description'>{truncate(liquor.content)}</p>
           </div>
           
-          <div className='ThingListItem__reviews'>
+          <div className='LiquorListItem__reviews'>
             <LiquorStarRating rating={liquor.average_review_rating} />
-            <span id='ThingListItem__review-count'>{readableReviewCount(liquor.number_of_reviews)}</span>
+            <span id='LiquorListItem__review-count'>{readableReviewCount(liquor.number_of_reviews)}</span>
           </div>
         </div>
       </Link>

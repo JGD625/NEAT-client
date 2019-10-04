@@ -33,7 +33,7 @@ export default class LiquorPage extends Component {
   renderLiquor() {
     const { liquor, reviews } = this.context
     return <>
-      <div className='ThingPage__image'/>
+      <div className='LiquorPage__image'/>
       <h2 className="red">{liquor.liquor_name}</h2>
       <LiquorContent liquor={liquor} />
       <LiquorReviews reviews={reviews} />
@@ -54,7 +54,7 @@ export default class LiquorPage extends Component {
       content = this.renderLiquor()
     }
     return (
-      <Section className='ThingPage'>
+      <Section className='LiquorPage'>
         {content}
       </Section>
     )
@@ -80,7 +80,7 @@ function LiquorContent({ liquor }) {
       <h3>Type: {liquor.liquor_type}</h3>
 
               </div>
-    <p className='ThingPage__content'>
+    <p className='LiquorPage__content'>
       {liquor.content}
     </p>
     </div>
@@ -89,18 +89,18 @@ function LiquorContent({ liquor }) {
 
 function LiquorReviews({ reviews = [] }) {
   return (
-    <ul className='ThingPage__review-list'>
+    <ul className='LiquorPage__review-list'>
       {reviews.map(review =>
-        <li key={review.id} className='ThingPage__review'>
-          <p className='ThingPage__review-text'>
+        <li key={review.id} className='LiquorPage__review'>
+          <p className='LiquorPage__review-text'>
             <FontAwesomeIcon
               size='lg'
               icon='quote-left'
-              className='ThingPage__review-icon red'
+              className='LiquorPage__review-icon red'
             />
             {review.text}
           </p>
-          <p className='ThingPage__review-user'>
+          <p className='LiquorPage__review-user'>
             <LiquorStarRating rating={review.rating} />
             <Hyph />
             {review.user.full_name}

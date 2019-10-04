@@ -1,18 +1,27 @@
 .Search_Hero {
 position: relative;
+background: #000;
 }
 
 .Search_Hero_IMG {
-    width: 800px;
-    height: 300px;
+    position: relative;
+    left: 20px;
+        width: 200px;
+        height: 200px;
 }
 
-.image-title {
+.search_image-title {
+    font-family: 'Fredericka the Great', cursive;
     font-size: 3rem;
     position: absolute;
     top: 50px;
-    left: 25px;
+    left: 500px;
     color: white;
     text-decoration: none;
     text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+}
+
+.search_p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
 }
