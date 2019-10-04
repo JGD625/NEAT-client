@@ -1,21 +1,24 @@
 .Search_Hero {
 position: relative;
 background: #000;
+margin-top: 100px;
+min-height: 400px;
 }
 
 .Search_Hero_IMG {
-    position: relative;
-    left: 20px;
-        width: 200px;
-        height: 200px;
+    position: absolute;
+    left: 40px;
+    top: -20px;
+    width: 200px;
+    height: 200px;
 }
 
 .search_image-title {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     position: absolute;
-    top: 50px;
-    left: 500px;
+    top: -20px;
+    right: 50px;
     color: white;
     text-decoration: none;
     text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
@@ -23,5 +26,16 @@ background: #000;
 
 .search_p {
     font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
     color: white;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+
+.Chalk_IMG {
+    position: absolute;
+    left: 0px;
+    top: -90px;
+    width: 350px;
 }

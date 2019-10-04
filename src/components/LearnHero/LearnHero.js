@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom'
 import NeatGlass from '../../images/neat_glass.png'
+import NeatArrow1 from '../../images/neat_arrow_1.png'
 import './LearnHero.css'
 
 export default class LearnHero extends Component {
@@ -11,7 +12,8 @@ export default class LearnHero extends Component {
     <img src={NeatGlass} alt="barrels of whiskey" className="Learn_Hero_IMG"/>
     <ImageTitle title={ "Learn about Whiskies" } />
     </Link>
-    <p className="learn_p">Learn about whiskey classifications and legal guidelines. </p>
+    <p className="learn_p">Understand classifications and production. </p>
+    <img src={NeatArrow1} alt="chalk arrow" className="chalk_arrow"/>
     </section>
   );
 }

@@ -1,17 +1,15 @@
 .Business {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 16.66rem;
+  flex-direction: row;
   margin: 0 .5rem 2.3rem .5rem;
-  background: #ffffff;
+  background: #000;
   padding: 10px;
 }
 
 .Business .Search_Image {
   margin-bottom: 1rem;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 .Business h2 {
@@ -21,7 +19,6 @@
 }
 
 .Business h3 {
- 
   font-weight: 300;
 }
 

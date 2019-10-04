@@ -1,4 +1,5 @@
 import React from 'react';
+import NeatScotchGlass from '../../images/neat_scotch_glass.png'
 import './Business.css'
 
 
@@ -8,17 +9,16 @@ class Business extends React.Component {
     return (
       <div className="Business">
         <div className="image-container">
-        <a href={this.props.business.url} target="_blank">
+        <a href={this.props.business.url} target="_blank" rel="noopener noreferrer">
           {/* accessed information via the business prop set in businesslist.js */}
-          <img src={this.props.business.imageSrc} className="Search_Image"/></a>
+          <img src={NeatScotchGlass} className="Search_Image" alt="whiskey glass"/></a>
         </div>
-        <h2>{this.props.business.name}</h2>
         <div className="Business-information">
+        <h2>{this.props.business.name}</h2>
           <div className="Business-address">
             <p>{this.props.business.phone}</p>
             <p>{this.props.business.address}</p>
-            <p>{this.props.business.city}</p>
-            <p>{`${this.props.business.state} ${this.props.business.zipCode}`}</p>
+            <p>{this.props.business.city}, {`${this.props.business.state} ${this.props.business.zipCode}`}</p>
           </div>
         </div>
       </div>

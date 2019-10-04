@@ -1,20 +1,30 @@
 .Liquor_Hero {
     position: relative;
     background: #000;
+    margin-top: 100px;
+    
     }
     
 .Hero_IMG {
     position: relative;
-        left: 500px;
+    top: 100px;
+
+        left: 450px;
         width: 250px;
         height: 250px;
     }
     
+.chalk_arrow_2 {
+    position: relative;
+    width: 100px;
+    top: -150px;
+    left: 80px;
+}
 .image-title {
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 25px;
-        font-size: 3rem;
+        font-size: 4rem;
         font-family: 'Fredericka the Great', cursive;
         color: white;
         text-decoration: none;
@@ -24,4 +34,16 @@
     .liquor_p {
         font-family: 'Oswald', sans-serif;
         color: white;
+        font-size: 1.5rem;
+        width: 300px;
+        position: absolute;
+        top: 80px;
+        left: 200px;
+    }
+
+    .chalk_stars{
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        width: 200px;
     }

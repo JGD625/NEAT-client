@@ -1,5 +1,4 @@
 import React from 'react';
-import YELP from '../../images/Yelp_trademark_RGB.png'
 import '../Yelp/SearchBar.css'
 
 

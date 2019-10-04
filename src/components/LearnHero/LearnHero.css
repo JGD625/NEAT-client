@@ -1,27 +1,42 @@
 .Learn_Hero {
     position: relative;
     background:#000;
+    margin-top: 100px;
+    min-height: 250px;
     }
     
 .Learn_Hero_IMG {
-    position: relative;
-    left: 500px;
+    position: absolute;
+    right: 150px;
+    top: -200px;
         width: 200px;
         height: 200px;
     }
     
 .learn_image-title {
     font-family: 'Fredericka the Great', cursive;
-        font-size: 3rem;
+        font-size: 4rem;
         position: absolute;
-        top: 50px;
-        left: 25px;
+        top: -100px;
         color: white;
+        width: 400px;
         text-decoration: none;
         text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
     }
 
     .learn_p {
         font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
         color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 300px;
+    }
+
+    .chalk_arrow {
+        width: 300px;
+        position: absolute;
+        top: -30px;
+        left: 300px;
     }

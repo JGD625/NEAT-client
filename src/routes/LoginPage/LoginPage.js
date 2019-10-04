@@ -25,10 +25,10 @@ export default class LoginPage extends Component {
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
         />
-        <h3>No account? Register <Link
+        <p>No account? Register <Link
           to='/register'>
           here
-        </Link>.</h3>
+        </Link></p>
       </Section>
     )
   }

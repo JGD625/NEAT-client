@@ -20,7 +20,7 @@
   padding: .66rem 1rem;
   margin-left: 2.22rem;
   margin-right: 2.22rem;
-  border: 3px solid #E40C2B;
+  border: 3px solid rgb(255, 121, 121);
   border-radius: 4px;
   font-size: 1rem;
   font-weight: 500;
@@ -30,7 +30,7 @@ button {
   cursor: pointer;
   border-radius: 4px;
   padding: .3rem .5rem;
-  background-color: #E40C2B;
+  background-color: rgb(255, 121, 121);
   color: #ffffff;
   font-size: 1rem;
   width: 100px; 
@@ -38,10 +38,15 @@ button {
 
 button a {
   border-radius: 4px;
-  background-color: #E40C2B;
+  background-color: rgb(255, 121, 121);
   color: #ffffff;
   font-size: 1rem;
- 
+  transition: all .5s ease;
+}
+
+button a:hover {
+  position: relative;
+  top: -5px;
 }
 
 
@@ -52,7 +57,7 @@ button a {
 .SearchBar-submit a {
   border-radius: 4px;
   padding: .72rem 1.7rem;
-  background-color: #E40C2B;
+  background-color: rgb(255, 121, 121);
   color: #ffffff;
   font-weight: 600;
   transition: background-color .5s;
@@ -60,7 +65,7 @@ button a {
 
 .SearchBar-submit a:hover {
   cursor: pointer;
-  background-color: #E40C2B;
+  background-color: rgb(255, 121, 121);
 }
 
 .SearchBar-logos {
