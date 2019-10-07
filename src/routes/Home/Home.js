@@ -12,11 +12,11 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home_container">
-      <img src={NeatHero} alt="whiskey best served neat" className="main_hero_img"/>
-      <h2 className="hero_slogan">Neat is here to help you find the perfect glass of whiskey.</h2>
-          <LiquorHero />
-          <SearchHero />
-          <LearnHero />
+        <img src={NeatHero} alt="whiskey best served neat" className="main_hero_img"/>
+        <h2 className="hero_slogan">Neat is here to help you find the perfect glass of whiskey.</h2>
+        <LiquorHero />
+        <SearchHero />
+        <LearnHero />
       </div>
     )
   }

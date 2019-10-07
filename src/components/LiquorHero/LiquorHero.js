@@ -9,17 +9,19 @@ export default class Hero extends Component {
   render() {
   return (
     <section className="Liquor_Hero">
+    <Link to="/liquors">
+    <div className="Liquor_Hero_Left">
     <ImageTitle title={ "Review Whiskies" } />
-    <Link to='/liquors'>
-    <img src={NeatTallBottle} alt="barrels of whiskey" className="Hero_IMG"/>
-    </Link>
-    <div>
-    <p className="liquor_p">Read and write reviews about different whiskies from around the world. </p>
     <img src={NeatArrow2} alt="chalk arrow" className="chalk_arrow_2"/>
     </div>
-    <div>
-    <img src={ChalkStars} alt="chalk arrow" className="chalk_stars"/>
+    <div className="Liquor_Hero_Right">
+    <img src={NeatTallBottle} alt="bottle of whiskey" className="Hero_IMG"/>
+    <img src={ChalkStars} alt="chalk stars" className="chalk_stars"/>
     </div>
+    <div className="Liquor_hero_text">
+    <p className="liquor_p">Read and write reviews about different whiskies from around the world. </p>
+    </div>
+    </Link>
     </section>
   );
 }

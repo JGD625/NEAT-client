@@ -5,14 +5,33 @@
   z-index: 5;
   width: 100%;
   height: 80px;
-  background-color: #000;
   color: #fff;
 }
-
 
 .Header a {
   color: #fff;
   text-decoration: none;
+}
+
+.Mobile_icon {
+  height: 60px;
+  width: 60px;
+  margin: 0px, 0px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+}
+
+.Mobile_icon:hover {
+  background: rgb(255, 121, 121);
+}
+
+.Block_Link {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -51,17 +70,61 @@ right: 10px;
 .main_logo {
   height: 80px;
   display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   transition: all .5s ease;
 }
 
-.main_logo:hover{ 
-  position: relative; 
-  top: -5px;
-} 
+ 
+@media screen and (max-width: 1024px) {
+  
 
+  .Mobile_Header__logged-in{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000;
+    }
+
+    .Mobile_Header__not-logged-in {
+     width: 100%;
+     position: fixed;
+     left: 0;
+     bottom: 0px;
+     display: flex;
+     flex-direction: row;
+     flex: 1;
+     align-items: center;
+     justify-content: space-evenly;
+     background: #000;
+    }
+
+    .Header__logged-in{
+      display: none;
+      }
+    .Header__not-logged-in {
+        display: none;
+       }
+}
+
+@media screen and (min-width: 1025px) {
+
+.Mobile_Header__logged-in{
+  display: none;
+}
+
+.Mobile_Header__not-logged-in {
+ display: none;
+}
+
+}
 @media screen and (min-width: 450px) {
   .Header {
     align-items: baseline;
@@ -70,8 +133,48 @@ right: 10px;
   .Header h1 {
     font-size: 22pt;
   }
+  .Mobile_icon {
+    height: 80px;
+    width: 80px;
+    margin: 0px, 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+  }
 }
 
 @media screen and (max-width: 490px) {
+  
 
+  .Mobile_Header__logged-in{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000;
+    }
+
+    .Mobile_Header__not-logged-in {
+     width: 100%;
+     position: fixed;
+     left: 0;
+     bottom: 0px;
+     display: flex;
+     flex-direction: row;
+     flex: 1;
+     align-items: center;
+     justify-content: space-evenly;
+     background: #000;
+    }
+
+    .Header__logged-in{
+      display: none;
+      }
+    .Header__not-logged-in {
+        display: none;
+       }
 }

@@ -1,49 +1,140 @@
-.Liquor_Hero {
+
+
+
+   .Liquor_Hero {
     position: relative;
-    background: #000;
-    margin-top: 100px;
-    
+    margin-top: 50px;
+    width: 500px;
+    height: 350px;
     }
+
+.Liquor_Hero_Left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 400px;
+    position: absolute;
+    left: 0px;
+
+}
+
+.Liquor_Hero_Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
     
 .Hero_IMG {
-    position: relative;
-    top: 100px;
-
-        left: 450px;
-        width: 250px;
-        height: 250px;
+    width: 200px;
     }
     
 .chalk_arrow_2 {
-    position: relative;
-    width: 100px;
-    top: -150px;
-    left: 80px;
+    width: 200px; 
+    z-index: 3;
 }
+
 .image-title {
-    position: absolute;
-    top: 10px;
-    left: 25px;
         font-size: 4rem;
         font-family: 'Fredericka the Great', cursive;
         color: white;
         text-decoration: none;
         text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+        z-index: 3;
     }
 
     .liquor_p {
         font-family: 'Oswald', sans-serif;
         color: white;
         font-size: 1.5rem;
-        width: 300px;
+        width: 500px;
         position: absolute;
-        top: 80px;
-        left: 200px;
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        bottom: -50px;
+    }
+
+    .Liquor_hero_text {
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .chalk_stars{
-        position: absolute;
-        top: 200px;
-        right: 100px;
         width: 200px;
+    }
+
+    @media screen and (min-width: 450px) {
+     
+    }
+    
+    @media screen and (max-width: 490px) {
+        .Liquor_Hero {
+            position: relative;
+            margin-top: 25px;
+            width: 350px;
+            height: 300px;
+            }
+
+        .Liquor_Hero_Left {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 200px;
+            position: absolute;
+            left: 25px;
+        }
+
+        .Liquor_Hero_Right {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            position: absolute;
+            right: 0px;
+        }
+            
+        .Hero_IMG {
+            width: 150px;
+            }
+            
+        .chalk_arrow_2 {
+            width: 130px; 
+            z-index: 3;
+        }
+        
+        .image-title {
+                font-size: 2.8rem;
+                max-width: 200px;
+                font-family: 'Fredericka the Great', cursive;
+                color: white;
+                text-decoration: none;
+                text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+                z-index: 3;
+            }
+        
+            .liquor_p {
+                font-family: 'Oswald', sans-serif;
+                color: white;
+                font-size: 1.3rem;
+                width: 300px;
+                position: absolute;
+                text-align: center;
+                bottom: 10px;
+            }
+
+            .Liquor_hero_text {
+                display: block;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+            .chalk_stars{
+                width: 100px;
+            }
+  
     }

@@ -1,42 +1,137 @@
+
+
 .Learn_Hero {
     position: relative;
-    background:#000;
-    margin-top: 100px;
-    min-height: 250px;
+    width: 500px;
+    height: 350px;
     }
-    
-.Learn_Hero_IMG {
-    position: absolute;
-    right: 150px;
-    top: -200px;
+
+.learn_image-title {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4rem;
+    color: white;
+    max-width: 200px;
+    text-decoration: none;
+    text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+    }
+    .Learn_Hero_IMG {
         width: 200px;
         height: 200px;
     }
-    
-.learn_image-title {
-    font-family: 'Fredericka the Great', cursive;
-        font-size: 4rem;
-        position: absolute;
-        top: -100px;
-        color: white;
-        width: 400px;
-        text-decoration: none;
-        text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
-    }
 
-    .learn_p {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.5rem;
-        color: white;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 300px;
+   .learn_p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    bottom: -50px;
     }
 
     .chalk_arrow {
+    width: 300px;
+    height: 100px;
+    z-index: 3;
+    }  
+
+    .Learn_text {
+        display: block;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }
+    .Learn_Hero_Left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        width: 400px;
+        position: absolute;
+        left: 0px;
+    }
+
+    .Learn_Hero_Right {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        position: absolute;
+        right: 0px;
+        top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        .Learn_Hero {
+           margin-top: 100px;
+            }
+        }
+    
+    @media screen and (min-width: 450px) {
+  
+    }
+    
+    @media screen and (max-width: 490px) {
+        .Learn_Hero {
+            position: relative;
+            width: 350px;
+            height: 300px;
+            }
+
+        .learn_image-title {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2.8rem;
+            color: white;
+            max-width: 200px;
+            text-decoration: none;
+            text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+            }
+
+        .Learn_Hero_IMG {
+            width: 150px;
+            height: 150px;
+        }
+
+       .learn_p {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 1.3rem;
         width: 300px;
         position: absolute;
-        top: -30px;
-        left: 300px;
+        text-align: center;
+        bottom: 10px;
+        }
+
+        .chalk_arrow {
+        width: 250px;
+        height: 80px;
+        z-index: 3;
+        }  
+    
+        .Learn_text {
+            display: block;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+         
+        }
+        .Learn_Hero_Left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            width: 200px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .Learn_Hero_Right {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
     }
+   
+        
+      
+    

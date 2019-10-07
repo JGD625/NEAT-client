@@ -8,12 +8,18 @@ export default class LearnHero extends Component {
   render() {
   return (
     <section className="Learn_Hero">
-    <Link to='/learn'>
-    <img src={NeatGlass} alt="barrels of whiskey" className="Learn_Hero_IMG"/>
+    <Link to="/learn">
+    <div className="Learn_Hero_Left">
     <ImageTitle title={ "Learn about Whiskies" } />
-    </Link>
-    <p className="learn_p">Understand classifications and production. </p>
     <img src={NeatArrow1} alt="chalk arrow" className="chalk_arrow"/>
+    </div>
+    <div className="Learn_Hero_Right">
+    <img src={NeatGlass} alt="barrels of whiskey" className="Learn_Hero_IMG"/>
+    </div>
+    <div className="Learn_text">
+    <p className="learn_p">Understand classifications and production. </p>
+    </div>
+    </Link>
     </section>
   );
 }

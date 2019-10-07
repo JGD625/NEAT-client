@@ -1,19 +1,73 @@
+
+
 .home_container {
-    height:100%;
-    width: 100%;
-    margin-top: 100px;
-    background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  padding-bottom: 45px;
 }
 
 .main_hero_img {
-    width: 400px;
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  width: 450px;
+  display: block;
 }
 
 .hero_slogan {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  display: block;
 }
+
+@media screen and (min-width: 1200px) {
+  .home_container {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+
+}
+
+
+
+@media screen and (min-width: 450px) {
+  
+  }
+  
+  @media screen and (max-width: 490px) {
+    .main_hero_img {
+        width: 300px;
+        display: block;
+    }
+
+    .hero_slogan {
+        font-size: 1.3rem;
+        max-width: 300px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        display: block;
+
+    }
+    .home_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0px;
+        padding-bottom: 45px;
+    }
+  
+  }
