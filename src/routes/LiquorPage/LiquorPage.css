@@ -1,9 +1,5 @@
-.LiquorPage__image {
-  height: 20vw;
-  min-height: 150px;
-  background-size: cover;
-  background-position: 50% 50%;
-  border-radius: 10px 10px 0 0;
+.LiquorPage {
+  margin-bottom: 100px;
 }
 
 .LiquorPage__review-list {
@@ -40,14 +36,14 @@
 }
 
 .LiquorPage__review-text {
-  background: #f5f5f5;
+  background: rgb(167, 59, 34);
   padding: 8px;
   margin-bottom: 4px;
   border-radius: 4px;
 }
 
 .LiquorPage__review-user {
-  color: #666;
+  color: rgb(159, 159, 159);
   margin: 8px 0 0;
   font-size: 10pt;
   font-weight: bold;

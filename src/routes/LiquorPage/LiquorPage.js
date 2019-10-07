@@ -24,6 +24,7 @@ export default class LiquorPage extends Component {
     LiquorApiService.getLiquorReviews(liquorId)
       .then(this.context.setReviews)
       .catch(this.context.setError)
+    window.scrollTo(0, 0)
   }
 
   componentWillUnmount() {

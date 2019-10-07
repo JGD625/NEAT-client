@@ -3,6 +3,11 @@ import { Section } from '../../components/Utils/Utils'
 import './NotFoundPage.css'
 
 export default class NotFoundPage extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+  
   render() {
     return (
       <Section className='NotFoundPage'>

@@ -27,7 +27,7 @@
 
 .Button {
   order: 1px solid #aaa;
-  background-color: rgb(255, 121, 121);
+  background-color: rgb(167, 59, 34);
   font-size: 1.1em;
   border-radius: 4px;
   padding: 8px 12px;
@@ -35,7 +35,7 @@
 }
 
 .Required {
-  color: #CA1551;
+  color: rgb(167, 59, 34);
   font-family: Arial;
   font-weight: bold;
 }

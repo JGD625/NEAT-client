@@ -15,6 +15,10 @@ export default class RegistrationPage extends Component {
     history.push('/login')
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <Section className='RegistrationPage'>

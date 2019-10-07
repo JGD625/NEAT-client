@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-
+import WHEAT from '../../images/neat_wheat_left.png'
+import './Learn.css'
 
 export default class LearnBourbon extends Component {
   render() {
@@ -8,9 +8,10 @@ export default class LearnBourbon extends Component {
 
     return (
       <div>
-      <p>Bourbon whiskey is an American whiskey made primarily from corn. Although it may be made anywhere in the United States, bourbon is strongly associated with the South and Kentucky in particular.</p> 
+        <img src={WHEAT} alt="wheat" className="Wheat" />
+      <p><span className="bigger">Bourbon</span> whiskey is an American whiskey made primarily from corn. Although it may be made anywhere in the United States, bourbon is strongly associated with the South and Kentucky in particular.</p> 
       <p>Bourbon is generally known for a sweeter flavor, derived from the charred oak barrels in which it is aged. The spirit gains its color and much of its flavor from the caramelized sugars and vanillins in the charred wood. There is no minimum age requirement for a whiskey to be labeled as a bournbon.</p>
-      <div>
+      <div className="indent">
         <span>The legal definition of a Bourbon requires that:</span>
         <ul>
           <li>Produced in the United States</li>

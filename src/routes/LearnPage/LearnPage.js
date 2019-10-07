@@ -9,17 +9,16 @@ import './LearnPage.css'
 
 export default class LearnPage extends Component {
   
- 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
   render() {
     return (
       <div className="Learn_Page_Container">
        <LearnWhiskey />
-       <h2>Bourbon</h2>
        <LearnBourbon />
-       <h2>Rye</h2>
        <LearnRye />
-       <h2>Scotch</h2>
        <LearnScotch />
       </div>
     )

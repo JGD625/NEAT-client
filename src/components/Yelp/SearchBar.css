@@ -80,13 +80,17 @@ button a:hover {
   font-size: 1.1rem;
 }
 
+.SearchBar h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 .yelp_icon {
   max-width: 90px;
 }
 
 @media only screen and (max-width: 560px) {
-  .SearchBar {
-  }
+
 
   .SearchBar-sort-options ul {
     margin-left: 2rem;

@@ -18,6 +18,10 @@ export default class LoginPage extends Component {
     history.push(destination)
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <Section className='LoginPage'>

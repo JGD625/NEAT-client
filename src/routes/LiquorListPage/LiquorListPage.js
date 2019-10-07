@@ -14,7 +14,9 @@ export default class LiquorListPage extends Component {
     LiquorApiService.getLiquors()
       .then(this.context.setLiquorList)
       .catch(this.context.setError)
-  }
+    window.scrollTo(0, 0)
+    }
+  
 
   renderLiquors() {
     const { liquorList = [] } = this.context;

@@ -1,10 +1,10 @@
 input {
-  outline: 1px solid  #3CBCC3;
+  outline: 1px solid  rgb(167, 59, 34);
 }
 
 
 input:focus {
-  outline: 3px solid  #3CBCC3;
+  outline: 3px solid  rgb(167, 59, 34);
 }
 
 

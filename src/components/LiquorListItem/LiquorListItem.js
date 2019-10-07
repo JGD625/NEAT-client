@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { LiquorStarRating } from '../LiquorStarRating/LiquorStarRating'
 import StarRatingComponent from 'react-star-rating-component';
+import BORDER from '../../images/neat_border.png'
 import './LiquorListItem.css'
 
 export default class LiquorListItem extends Component {
@@ -9,8 +10,9 @@ export default class LiquorListItem extends Component {
     const { liquor } = this.props
 
     return (
-      <Link to={`/liquors/${liquor.id}`} className='LiquorListItem'>
-        <div className='LiquorListItem__details'>
+      <Link to={`/liquors/${liquor.id}`} className='LiquorListItem' >
+        <div className='LiquorListItem__details' style={{ backgroundImage:`url(${BORDER})`, backgroundPosition: 'center',
+  backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
           <div className='LiquorListItem__text'>
             <h2 className='LiquorListItem__heading'>{liquor.liquor_name}</h2>
             <div style={{fontSize: 20}}>

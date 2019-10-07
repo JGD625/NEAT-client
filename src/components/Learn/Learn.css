@@ -1,0 +1,56 @@
+.Learn_Page_Container {
+font-size: 1.2rem;
+color: #fff;
+}
+
+.Rye_bottle {
+    float: left;
+width: 150px;
+}
+
+.Scotch_glass{
+    float: left;
+    width: 150px;
+}
+.Molecule_img {
+float: left;
+height: 200px;
+}
+
+.bigger {
+    font-size: 3rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.Wheat {
+float: Left;
+width: 150px;
+}
+
+.indent {
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 490px) {
+    .Wheat {
+        float: Left;
+        width: 100px;
+        }
+        .Rye_bottle {
+            float: left;
+        width: 100px;
+        }
+        
+        .Scotch_glass{
+            float: left;
+            width: 100px;
+        }
+        .Molecule_img {
+        float: left;
+        width: 100px;
+        }
+        .bigger {
+            font-size: 2.5rem;
+            font-family: 'Fredericka the Great', cursive;
+        }
+}

@@ -22,7 +22,7 @@
 }
 
 .Mobile_icon:hover {
-  background: rgb(255, 121, 121);
+  background: rgb(167, 59, 34);
 }
 
 .Block_Link {
@@ -46,7 +46,7 @@
 }
 
 .Header__not-logged-in a:last-child {
-  background: rgb(255, 121, 121);
+  background: rgb(167, 59, 34);
   color: white;
   padding: 5px 15px;
   border-radius: 15px;
@@ -56,7 +56,7 @@
 .Header__logged-in a {
   color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  background: rgb(255, 121, 121);
+  background: rgb(167, 59, 34);
   padding: 5px 15px;
   border-radius: 15px;
 }

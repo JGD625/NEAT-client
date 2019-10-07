@@ -109,8 +109,7 @@ validate(location) {
           <button onClick={this.handleSearch} disabled={!isEnabled} >Search</button>
         </div>
         </div>
-        <div className="SearchBar-logos">
-        </div>
+       
       </div>
     )
   }
