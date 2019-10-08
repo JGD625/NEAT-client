@@ -44,6 +44,9 @@
         text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
         z-index: 3;
     }
+    .image-title:hover {
+        text-shadow: -1px 0 rgb(167, 59, 34), 0 1px rgb(167, 59, 34), 1px 0 rgb(167, 59, 34), 0 -1px rgb(167, 59, 34);
+        }
 
     .liquor_p {
         font-family: 'Oswald', sans-serif;

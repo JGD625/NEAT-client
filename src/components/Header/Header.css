@@ -21,8 +21,13 @@
   border-radius: 50%;
 }
 
-.Mobile_icon:hover {
+.Block_Link:hover {
   background: rgb(167, 59, 34);
+  height: 80px;
+  width: 80px;
+  margin: 0px, 0px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
 }
 
 .Block_Link {
@@ -34,29 +39,104 @@
   justify-content: center;
 }
 
+.BL1:hover .overlay1 {
+  opacity: 1;
+}
+
+.BL2:hover .overlay2 {
+  opacity: 1;
+}
+
+.BL3:hover .overlay3 {
+  opacity: 1;
+}
+
+.BL4:hover .overlay4 {
+  opacity: 1;
+}
+
+.BL5:hover .overlay5 {
+  opacity: 1;
+}
+
+.BL6:hover .overlay6 {
+  opacity: 1;
+}
+
+.BL7:hover .overlay7 {
+  opacity: 1;
+}
+
+.BL8:hover .overlay8 {
+  opacity: 1;
+}
+
+.overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8  {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
 
 .Header__not-logged-in {
   position: fixed;
   top: 40px;
   right: 10px;
   display: flex;
+  flex-direction: row;
   flex: 1;
   align-items: center;
   justify-content: flex-end;
 }
 
-.Header__not-logged-in a:last-child {
+
+
+.Header__not-logged-in a {
+  display: block;
   background: rgb(167, 59, 34);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
   color: white;
   padding: 5px 15px;
   border-radius: 15px;
   margin-left: 10px;
+  transition: 0.3s;
+  width: 90px;
+}
+
+.Header__not-logged-in a:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: #000;
+  padding: 5px 15px;
+  border-radius: 15px;
 }
 
 .Header__logged-in a {
+  display: block;
+  text-align: center;
   color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.25);
   background: rgb(167, 59, 34);
+  padding: 5px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+  width: 90px;
+}
+
+.Header__logged-in a:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: #000;
   padding: 5px 15px;
   border-radius: 15px;
 }
@@ -65,6 +145,8 @@
 position: fixed;
 top: 40px;
 right: 10px;
+display: flex;
+flex-direction: row;
 }
 
 .main_logo {

@@ -35,7 +35,7 @@ export default class LiquorPage extends Component {
     const { liquor, reviews } = this.context
     return <>
       <div className='LiquorPage__image'/>
-      <h2 className="red">{liquor.liquor_name}</h2>
+      <h2>{liquor.liquor_name}</h2>
       <LiquorContent liquor={liquor} />
       <LiquorReviews reviews={reviews} />
       <ReviewForm />
@@ -66,12 +66,12 @@ function LiquorContent({ liquor }) {
   return (
     <div>
       <div className="Liquor_details">
-      <h3>Proof: {liquor.proof}</h3>
-      <h3>Price: <StarRatingComponent 
+      <h3>{liquor.proof} Proof</h3>
+      <h3><StarRatingComponent 
               name="rate2" 
               editing={false}
               renderStarIcon={() => <span>$</span>}
-              starColor="#8B0000"
+              starColor="#fff"
               starCount={4}
               value={liquor.price}
               /></h3>

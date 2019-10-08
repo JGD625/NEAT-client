@@ -1,5 +1,8 @@
 .LiquorPage {
+  margin-top: 100px;
   margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .LiquorPage__review-list {

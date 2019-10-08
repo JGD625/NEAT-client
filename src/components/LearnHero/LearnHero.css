@@ -14,6 +14,10 @@
     text-decoration: none;
     text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
     }
+    .learn_image-title:hover {
+        text-shadow: -1px 0 rgb(167, 59, 34), 0 1px rgb(167, 59, 34), 1px 0 rgb(167, 59, 34), 0 -1px rgb(167, 59, 34);
+        }
+    
     .Learn_Hero_IMG {
         width: 200px;
         height: 200px;
