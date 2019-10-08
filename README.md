@@ -18,3 +18,7 @@ React application
 ## Scripts
 
 - Start the application for development: `npm start`
+
+# SCREEN SHOTS
+
+<img src="https://static.wixstatic.com/media/d9f074_3a66fdba6edb430297f2bde818d74d47~mv2.png/v1/fill/w_400,h_571/Screen%20Shot%202019-10-08%20at%2011.png" alt="Neat Screenshot" />
