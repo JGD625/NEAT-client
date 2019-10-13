@@ -1,6 +1,8 @@
 # NEAT Client
 
 Client side of NEAT full-stack capstone project by JDBUTISBAUCH
+
+# TECHNOLOGIES USED
 This app uses the React, Node, Express, PostgreSQL, CSS stack.
 (server side hosted with HEROKU)
 
