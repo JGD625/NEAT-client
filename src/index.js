@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import * as serviceWorker from './serviceWorker'
+
 import { LiquorListProvider } from './contexts/LiquorListContext'
 import { LiquorProvider } from './contexts/LiquorContext'
 import App from './components/App/App'
@@ -48,4 +48,4 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
-serviceWorker.unregister()
+
