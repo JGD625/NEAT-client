@@ -20,7 +20,7 @@ export default class LiquorListItem extends Component {
               name="rate2" 
               editing={false}
               renderStarIcon={() => <span>$</span>}
-              starColor="#8B0000"
+              starColor="#fff"
               starCount={4}
               value={liquor.price}
               />

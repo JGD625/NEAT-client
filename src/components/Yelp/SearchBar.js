@@ -11,6 +11,7 @@ const sortByOptions = {
 
 
 
+
 class SearchBar extends React.Component {
 //add search bar constructor and set state and add three keys
   constructor(props){

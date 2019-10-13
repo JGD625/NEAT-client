@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
+import IdleService from '../../services/idle-service'
 import NEATLOGO from '../../images/NEATLOGO.png'
 import SIGNUPICON from '../../images/neat_icon_signup.png'
 import LOGINICON from '../../images/neat_icon_login.png'
@@ -15,13 +16,18 @@ export default class Header extends Component {
 
   handleLogoutClick = () => {
     TokenService.clearAuthToken()
+    /* when logging out, clear the callbacks to the refresh api and idle auto logout */
+    TokenService.clearCallbackBeforeExpiry()
+    IdleService.unRegisterIdleResets()
   }
 
   renderLogoutLink() {
     return (
       <section>
-      <div className='Header__logged-in'>
+        <Link to="/">
       <img src={NEATLOGO} alt="review whiskies" className="main_logo" />
+      </Link>
+      <div className='Header__logged-in'>
         <Link 
           to="/liquors">
           Whiskies
@@ -112,7 +118,7 @@ export default class Header extends Component {
        
        <Link to="/">
       <img src={NEATLOGO} alt="review whiskies" className="Mobile_icon" />
-      <div class="overlay6">HOME</div>
+      <div className="overlay6">HOME</div>
       </Link>
         </div>
         <div className="Block_Link BL7">
@@ -120,7 +126,7 @@ export default class Header extends Component {
         <Link
           to='/login'>
           <img src={LOGINICON} alt="log in" className="Mobile_icon" />
-          <div class="overlay7">LOG IN</div>
+          <div className="overlay7">LOG IN</div>
        </Link>
         </div>
 
@@ -128,7 +134,7 @@ export default class Header extends Component {
         <Link
           to='/register'>
           <img src={SIGNUPICON} alt="sign up" className="Mobile_icon" />
-          <div class="overlay8">SIGN UP</div>
+          <div className="overlay8">SIGN UP</div>
         </Link>
         </div>
 

@@ -27,13 +27,19 @@
 }
 
 button {
+  font-family: Oswald;
+  font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 4px;
-  padding: .3rem .5rem;
-  background-color: rgb(167, 59, 34);
-  color: #ffffff;
-  font-size: 1rem;
-  width: 100px; 
+  display: block;
+  background: rgb(167, 59, 34);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-left: 5px;
+  transition: 0.3s;
+  width: 90px;
 }
 
 button a {
@@ -44,10 +50,18 @@ button a {
   transition: all .5s ease;
 }
 
-button a:hover {
-  position: relative;
-  top: -5px;
+button:hover {
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
 }
+
+button:focus,
+select:focus {
+  outline: none;
+}
+
+
 
 
 .SearchBar-submit {
@@ -65,8 +79,11 @@ button a:hover {
 
 .SearchBar-submit a:hover {
   cursor: pointer;
-  background-color: rgb(167, 59, 34);
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
 }
+
 
 .SearchBar-logos {
   text-align: center;
